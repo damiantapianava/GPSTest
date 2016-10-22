@@ -25,6 +25,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate
         self.localizador!.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         self.localizador!.delegate = self
         
+        let autorizado = CLLocationManager.authorizationStatus()
+        
+        if autorizado == CLAuthorizationStatus.NotDetermined
+        {
+            self.localizador!.requestWhenInUseAuthorization()
+        }
+        
         self.localizador!.startUpdatingLocation()
     }
 
@@ -52,7 +59,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate
         
         self.txtLatitude.text = "\(ubicacion!.coordinate.latitude)"
         self.txtLatitude.text = "\(ubicacion!.coordinate.longitude)"
-        
         
     }
 
