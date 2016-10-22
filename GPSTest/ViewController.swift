@@ -72,6 +72,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate
         let region = MKCoordinateRegionMakeWithDistance(laCoordenada, 1000, 1000)
         
         self.elMapa.setRegion(region, animated: true)
+        
+        let losPines = self.elMapa.annotations
+        
+        self.elMapa.removeAnnotations(losPines)
+        
+        let elPin = PinManager(title:"Usted está aqui", subtitle:"", coordinate:laCoordenada)
+        
+        self.elMapa.addAnnotation(elPin)
     }
 
 }

@@ -14,6 +14,7 @@
 		A3EE27341DBB8F2F00378506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EE27321DBB8F2F00378506 /* LaunchScreen.storyboard */; };
 		A3EE273C1DBB985B00378506 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EE273B1DBB985B00378506 /* CoreLocation.framework */; };
 		A3EE273E1DBBA1B400378506 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EE273D1DBBA1B400378506 /* MapKit.framework */; };
+		A3EE27401DBBA3E800378506 /* PinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE273F1DBBA3E800378506 /* PinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A3EE27351DBB8F2F00378506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3EE273B1DBB985B00378506 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A3EE273D1DBBA1B400378506 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A3EE273F1DBBA3E800378506 /* PinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A3EE27291DBB8F2F00378506 /* AppDelegate.swift */,
+				A3EE273F1DBBA3E800378506 /* PinManager.swift */,
 				A3EE272B1DBB8F2F00378506 /* ViewController.swift */,
 				A3EE272D1DBB8F2F00378506 /* Main.storyboard */,
 				A3EE27301DBB8F2F00378506 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3EE272C1DBB8F2F00378506 /* ViewController.swift in Sources */,
+				A3EE27401DBBA3E800378506 /* PinManager.swift in Sources */,
 				A3EE272A1DBB8F2F00378506 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
