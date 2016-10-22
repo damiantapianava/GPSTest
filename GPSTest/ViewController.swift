@@ -8,12 +8,14 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate
 {
 
     @IBOutlet weak var txtLatitude: UITextField!
     @IBOutlet weak var txtLongitud: UITextField!
+    @IBOutlet weak var elMapa: MKMapView!
     
     var localizador : CLLocationManager?
     
@@ -60,6 +62,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate
         self.txtLatitude.text = "\(ubicacion!.coordinate.latitude)"
         self.txtLatitude.text = "\(ubicacion!.coordinate.longitude)"
         
+        self.colocarMapa(ubicacion!)
+    }
+    
+    func colocarMapa(ubicacion: CLLocation)
+    {
+        let laCoordenada = ubicacion.coordinate
+        
+        let region = MKCoordinateRegionMakeWithDistance(laCoordenada, 1000, 1000)
+        
+        self.elMapa.setRegion(region, animated: true)
     }
 
 }

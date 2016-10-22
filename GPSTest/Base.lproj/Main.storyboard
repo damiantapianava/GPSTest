@@ -27,10 +27,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UaM-8o-3OT">
+                                <rect key="frame" x="108" y="201" width="385" height="186"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="elMapa" destination="UaM-8o-3OT" id="QHP-9V-A3v"/>
                         <outlet property="txtLatitude" destination="Bca-ts-1LC" id="MtM-Jf-Lkw"/>
                         <outlet property="txtLongitud" destination="Ma7-FE-Q0n" id="ejI-IA-EOy"/>
                     </connections>
